@@ -1,0 +1,178 @@
+{
+  "themeType": "restaurant",
+  "profession": "restaurant",
+  "layoutFamily": "cinematic",
+  "editorialSquareMenu": true,
+  "shinyMenu": false,
+  "vibrantMode": true,
+  "buttonStyle": "pill",
+  "blockLayout": "classic",
+  "galleryLayout": "grid",
+  "contactLayout": "split",
+  "siteName": "Maison Olive",
+  "logoText": "MO",
+  "tagline": "A seasonal tasting menu and chef experience.",
+  "location": "Paris, France",
+  "phone": "+33 1 44 77 22 10",
+  "email": "reservation@maisonolive.fr",
+  "facebookUrl": "https://www.facebook.com/",
+  "instagramUrl": "https://www.instagram.com/",
+  "seoKeywords": "restaurant paris, fine dining, tasting menu, table reservation",
+  "chatButtonLabel": "Talk to us",
+  "adminUsername": "admin",
+  "adminPassword": "",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80",
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80",
+    "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1800&q=80"
+  ],
+  "fonts": {
+    "heading": "Playfair Display",
+    "body": "Manrope"
+  },
+  "colors": {
+    "primary": "#c9a06b",
+    "secondary": "#14315a",
+    "accent": "#efc56f",
+    "background": "#0f1217",
+    "menu": "#000000",
+    "container": "#202a3b"
+  },
+  "motion": {
+    "usePreloader": true,
+    "enableReveal": true,
+    "enableParallax": true,
+    "useScrollSnap": true,
+    "enableLightbox": true
+  },
+  "pages": {
+    "home": {
+      "nav": "Home",
+      "title": "Restaurant Hero Landing",
+      "subtitle": "Dark first fold, then smooth scroll into second and third scenes.",
+      "body": "Designed for premium restaurant pilot demos.",
+      "cta": "Book a table"
+    },
+    "about": {
+      "nav": "About",
+      "title": "Welcome To Our Restaurant",
+      "subtitle": "Warm service and modern plating.",
+      "body": "Tell your origin and concept story.",
+      "cta": "Read Story"
+    },
+    "menu": {
+      "nav": "Menu",
+      "title": "Seasonal Menu",
+      "subtitle": "Balanced flavors and fresh ingredients.",
+      "body": "Highlight your signature dishes first.",
+      "cta": "View Menu"
+    },
+    "gallery": {
+      "nav": "Gallery",
+      "title": "Culinary Gallery",
+      "subtitle": "Food, interior, and atmosphere moments.",
+      "body": "Use dish close-ups and room visuals.",
+      "cta": "Open Gallery"
+    },
+    "reservation": {
+      "nav": "Reservation",
+      "title": "Reserve Your Table",
+      "subtitle": "Simple and fast reservation form.",
+      "body": "Connect this to your booking provider later.",
+      "cta": "Request Reservation"
+    },
+    "location": {
+      "nav": "Location",
+      "title": "Find Us",
+      "subtitle": "In the center with easy access.",
+      "body": "Add parking and transport details.",
+      "cta": "Directions"
+    },
+    "contact": {
+      "nav": "Contact",
+      "title": "Contact The Team",
+      "subtitle": "Private events and partnerships.",
+      "body": "Add response time and preferred channel.",
+      "cta": "Send Inquiry"
+    }
+  },
+  "menuItems": [
+    {
+      "name": "Smoked Burrata",
+      "desc": "Tomato confit and basil oil.",
+      "price": "EUR 14"
+    },
+    {
+      "name": "Truffle Pasta",
+      "desc": "Handmade pasta with cream sauce.",
+      "price": "EUR 23"
+    },
+    {
+      "name": "Sea Bass",
+      "desc": "Seasonal vegetables and citrus glaze.",
+      "price": "EUR 29"
+    }
+  ],
+  "customBlocks": [
+    {
+      "id": "block-1",
+      "title": "Chef's Weekly Feature",
+      "text": "Promote rotating dishes to increase return visits.",
+      "button": "This Week",
+      "span": 1
+    },
+    {
+      "id": "block-2",
+      "title": "Private Dining",
+      "text": "Packages for birthdays, business dinners, and events.",
+      "button": "Request Details",
+      "span": 1
+    }
+  ],
+  "customBlocksByPage": {
+    "home": [
+      {
+        "id": "block-1",
+        "title": "Chef's Weekly Feature",
+        "text": "Promote rotating dishes to increase return visits.",
+        "button": "This Week",
+        "span": 1
+      },
+      {
+        "id": "block-2",
+        "title": "Private Dining",
+        "text": "Packages for birthdays, business dinners, and events.",
+        "button": "Request Details",
+        "span": 1
+      }
+    ],
+    "about": [],
+    "menu": []
+  },
+  "portalPreviewMode": "site",
+  "portalPreviewAdminTab": "reservations",
+  "adminTabsAddon": {
+    "menuOverview": true,
+    "staffPage": true,
+    "staffMembers": true,
+    "staffSchedule": true,
+    "payroll": true
+  },
+  "portalPreviewStaffTab": "schedule",
+  "staffTabsAddon": {
+    "availability": true,
+    "change": true
+  },
+  "portalTheme": {
+    "headingFont": "Playfair Display",
+    "bodyFont": "Manrope",
+    "gradientFrom": "#bdc1c7",
+    "gradientTo": "#1c447d",
+    "surface": "#1c1712",
+    "buttonGradientFrom": "#1c1712",
+    "buttonGradientTo": "#282625",
+    "menuActiveColor": "#cdae70",
+    "menuHoverColor": "#dfa04e"
+  },
+  "databaseProfile": "local_postgres"
+}

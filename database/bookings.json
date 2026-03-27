@@ -1,0 +1,9 @@
+{
+  "nextBookingNumber": 1,
+  "nextStaffId": 1,
+  "nextAvailabilityId": 1,
+  "bookings": [],
+  "staffMembers": [],
+  "availabilityEntries": [],
+  "staffWeeklyChangeLog": []
+}
