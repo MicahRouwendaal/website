@@ -19,8 +19,15 @@ from sqlalchemy import create_engine, text
 
 APP_ROOT = Path(__file__).resolve().parent
 SITE_FILE = APP_ROOT / os.getenv("SITE_FILE", "generated-site.html")
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
+raw_db = os.getenv("SQLALCHEMY_DATABASE_URL", "").strip() or os.getenv("DATABASE_URL", "").strip()
+if raw_db.startswith("postgres://"):
+    raw_db = "postgresql://" + raw_db[len("postgres://"):]
+if raw_db.startswith("postgresql://"):
+    raw_db = "postgresql+psycopg://" + raw_db[len("postgresql://"):]
+DATABASE_URL = raw_db
+print("DB scheme:", DATABASE_URL.split("://", 1)[0])  # temporary debug
 TOKEN_SECRET = os.getenv("TOKEN_SECRET", "").strip() or "change-this-token-secret"
+
 TOKEN_TTL_HOURS = max(1, int(os.getenv("TOKEN_TTL_HOURS", "12") or "12"))
 AUTH_REQUIRED = os.getenv("AUTH_REQUIRED", "true").strip().lower() not in {"0", "false", "no", "off"}
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin").strip() or "admin"
